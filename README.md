@@ -25,7 +25,3 @@ References:
 LICENSE
 ==============================
 Moodle site forum mobile is licensed under the MIT Open Source license.
-
-Open Source License
-==============================
-Ionic is licensed under the MIT Open Source license.
