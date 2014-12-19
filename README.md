@@ -24,8 +24,8 @@ References:
 
 LICENSE
 ==============================
-Moodle site forum mobile is licensed under the <a herf="http://opensource.org/licenses/MIT">MIT Open Source license.<a>
+Moodle site forum mobile is licensed under the MIT Open Source license.
 
 Open Source License
 ==============================
-Ionic is licensed under the <a herf="http://opensource.org/licenses/MIT">MIT Open Source license.<a>
+Ionic is licensed under the MIT Open Source license.
