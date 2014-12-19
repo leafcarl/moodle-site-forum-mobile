@@ -1,0 +1,24 @@
+<ion-view title="{{forum.name}}">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+    <div class="card">
+      <div class="item item-text-wrap" ng-bind-html="forum.intro">
+        {{forum.intro}}
+      </div>
+    </div>
+    <ion-list>
+      <ion-item ng-repeat="discussion in discussions" ng-href="#/app/discussion/{{discussion.discussion}}">
+        <i class="icon ion-chatboxes"></i> {{discussion.name}}
+        <p>by {{discussion.usermodifiedfullname}} | Updated at {{discussion.timemodified * 1000 | date:'dd-MM-yyyy HH:mm:ss'}}</p>
+        <span class="badge badge-stable">{{discussion.numreplies}}</span>
+      </ion-item>
+    </ion-list>
+    <button class="button-full button-clear forum-more" ng-click="doGetMore()" ng-hide="hideMore">More...</button>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,33 @@
+<ion-view>
+  <ion-content>
+  <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="doRefresh()">
+    </ion-refresher>
+    <div class="card">
+      <div class="item item-text-wrap">
+        {{posts[0].subject}}
+      </div>
+    </div>
+    <ion-list>
+    <div ng-repeat="post in posts" class="list card">
+      <div class="item item-avatar">
+        <img class="icon" ng-src="{{post.userpictureurl}}?token={{token}}"></img>
+        <h2>{{post.userfullname}}</h2>
+        <p>{{post.created * 1000 | date:'dd-MM-yyyy HH:mm:ss'}}</p>
+        <p ng-show="post.show_modified">Modified at {{post.modified * 1000 | date:'dd-MM-yyyy HH:mm:ss'}}</p>
+      </div>
+    
+      <div class="item item-body">
+        <div ng-bind-html="post.message">
+          {{post.message}}
+        </div>
+        <div ng-bind-html="post.imageHtml">
+          {{post.imageHtml}}
+        </div>
+      </div>
+    
+    </div>
+    </ion-list>
+  </ion-content>
+</ion-view>
