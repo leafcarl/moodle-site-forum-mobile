@@ -21,3 +21,11 @@ Note: post replying is not support by native Moodle web service plugin.
 References:
 - Ionic Framework: http://ionicframework.com
 - Moodle: https://moodle.org
+
+LICENSE
+==============================
+Moodle site forum mobile is licensed under the <a herf="http://opensource.org/licenses/MIT">MIT Open Source license.<a>
+
+Open Source License
+==============================
+Ionic is licensed under the <a herf="http://opensource.org/licenses/MIT">MIT Open Source license.<a>
