@@ -17,7 +17,7 @@ To use ionic start and debugging web browser, you may:
 - add this line "header('Access-Control-Allow-Origin: *');" to SERVER_MOODLE_DIRECTORY/login/token.php
 - OR to enable proxy with the example changes in both ionic.project and controller.js file
 
-  in ionic.project
+  in ionic.project,
   "proxies": [
     {
       "path": "/moodle",
@@ -25,7 +25,7 @@ To use ionic start and debugging web browser, you may:
     }
   ]
 
-  in controller.js
+  in controller.js,
   set constant 'SERVER_URL' to 'http://localhost/moodle/'
 
 With the benefits of Ionic Framework, the app can be built on both iOS and Android platforms.
